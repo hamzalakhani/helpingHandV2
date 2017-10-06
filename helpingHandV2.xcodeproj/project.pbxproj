@@ -28,6 +28,7 @@
 		CAD0304F1F86E93000276DA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAD030511F86E93000276DA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAD030591F86F0A000276DA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../../../../../.Trash/ViewController.swift; sourceTree = "<group>"; };
+		CAD0305B1F8811E300276DA9 /* helpingHandV2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = helpingHandV2.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		CAD030411F86E93000276DA9 /* helpingHandV2 */ = {
 			isa = PBXGroup;
 			children = (
+				CAD0305B1F8811E300276DA9 /* helpingHandV2.entitlements */,
 				CAD030421F86E93000276DA9 /* AppDelegate.swift */,
 				CAD030461F86E93000276DA9 /* Main.storyboard */,
 				CAD030591F86F0A000276DA9 /* ViewController.swift */,
@@ -127,6 +129,11 @@
 					CAD0303E1F86E93000276DA9 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -366,6 +373,7 @@
 			baseConfigurationReference = 4A5CAEF92A8940581F15EFEC /* Pods-helpingHandV2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = helpingHandV2/helpingHandV2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TNELUUJWJ;
 				INFOPLIST_FILE = helpingHandV2/Info.plist;
@@ -382,6 +390,7 @@
 			baseConfigurationReference = BA55F9295664ED586C41444B /* Pods-helpingHandV2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = helpingHandV2/helpingHandV2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TNELUUJWJ;
 				INFOPLIST_FILE = helpingHandV2/Info.plist;
