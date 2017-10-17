@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import FBSDKCoreKit
+import Firebase
 import GoogleSignIn
 
 @UIApplicationMain
@@ -19,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        
-        GIDSignIn.sharedInstance().clientID = [FIRApp, defaultApp].options.clientID
+        FirebaseApp.configure()
+        GIDSignIn.sharedInstance().clientID = [FirebaseApp, defaultApp].options.clientID
         
     FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         return true

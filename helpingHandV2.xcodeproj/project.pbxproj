@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78F70DFA62B3E84D02AEF3B1 /* Pods_helpingHandV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528BECF555C234B3C38DB52C /* Pods_helpingHandV2.framework */; };
+		CAA46CA21F96AFE700CE7B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAA46CA11F96AFE700CE7B2D /* GoogleService-Info.plist */; };
 		CAD030431F86E93000276DA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD030421F86E93000276DA9 /* AppDelegate.swift */; };
 		CAD030481F86E93000276DA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD030461F86E93000276DA9 /* Main.storyboard */; };
 		CAD0304B1F86E93000276DA9 /* helpingHandV2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAD030491F86E93000276DA9 /* helpingHandV2.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 		4A5CAEF92A8940581F15EFEC /* Pods-helpingHandV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helpingHandV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-helpingHandV2/Pods-helpingHandV2.debug.xcconfig"; sourceTree = "<group>"; };
 		528BECF555C234B3C38DB52C /* Pods_helpingHandV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_helpingHandV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA55F9295664ED586C41444B /* Pods-helpingHandV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helpingHandV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-helpingHandV2/Pods-helpingHandV2.release.xcconfig"; sourceTree = "<group>"; };
+		CAA46CA11F96AFE700CE7B2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CAD0303F1F86E93000276DA9 /* helpingHandV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpingHandV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD030421F86E93000276DA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAD030471F86E93000276DA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				CAD0304C1F86E93000276DA9 /* Assets.xcassets */,
 				CAD0304E1F86E93000276DA9 /* LaunchScreen.storyboard */,
 				CAD030511F86E93000276DA9 /* Info.plist */,
+				CAA46CA11F96AFE700CE7B2D /* GoogleService-Info.plist */,
 				CAD030491F86E93000276DA9 /* helpingHandV2.xcdatamodeld */,
 			);
 			path = helpingHandV2;
@@ -162,6 +165,7 @@
 			files = (
 				CAD030501F86E93000276DA9 /* LaunchScreen.storyboard in Resources */,
 				CAD0304D1F86E93000276DA9 /* Assets.xcassets in Resources */,
+				CAA46CA21F96AFE700CE7B2D /* GoogleService-Info.plist in Resources */,
 				CAD030481F86E93000276DA9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +223,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -229,6 +234,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

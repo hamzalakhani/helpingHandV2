@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>414715032893-428pco78kf4ksa7slmfe45k68v7ng1l7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.414715032893-428pco78kf4ksa7slmfe45k68v7ng1l7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAij2ol6JNm1cd8kRCPtEza4PlfYidzHAk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>414715032893</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hamzalakhani.helpingHandV2</string>
+	<key>PROJECT_ID</key>
+	<string>helpinghandv2</string>
+	<key>STORAGE_BUCKET</key>
+	<string>helpinghandv2.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:414715032893:ios:38b5ce60858ccf1b</string>
+	<key>DATABASE_URL</key>
+	<string>https://helpinghandv2.firebaseio.com</string>
+</dict>
+</plist>
