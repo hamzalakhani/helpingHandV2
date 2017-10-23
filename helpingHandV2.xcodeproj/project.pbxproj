@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78F70DFA62B3E84D02AEF3B1 /* Pods_helpingHandV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528BECF555C234B3C38DB52C /* Pods_helpingHandV2.framework */; };
+		CA28C9561F9E86C800740DEF /* LoginorRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA28C9551F9E86C800740DEF /* LoginorRegister.swift */; };
 		CAA46CA21F96AFE700CE7B2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CAA46CA11F96AFE700CE7B2D /* GoogleService-Info.plist */; };
 		CAD030431F86E93000276DA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD030421F86E93000276DA9 /* AppDelegate.swift */; };
 		CAD030481F86E93000276DA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAD030461F86E93000276DA9 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		4A5CAEF92A8940581F15EFEC /* Pods-helpingHandV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helpingHandV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-helpingHandV2/Pods-helpingHandV2.debug.xcconfig"; sourceTree = "<group>"; };
 		528BECF555C234B3C38DB52C /* Pods_helpingHandV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_helpingHandV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA55F9295664ED586C41444B /* Pods-helpingHandV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helpingHandV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-helpingHandV2/Pods-helpingHandV2.release.xcconfig"; sourceTree = "<group>"; };
+		CA28C9551F9E86C800740DEF /* LoginorRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginorRegister.swift; sourceTree = "<group>"; };
 		CAA46CA11F96AFE700CE7B2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CAD0303F1F86E93000276DA9 /* helpingHandV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpingHandV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAD030421F86E93000276DA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				CAD030421F86E93000276DA9 /* AppDelegate.swift */,
 				CAD030461F86E93000276DA9 /* Main.storyboard */,
 				CAD030591F86F0A000276DA9 /* ViewController.swift */,
+				CA28C9551F9E86C800740DEF /* LoginorRegister.swift */,
 				CAD0304C1F86E93000276DA9 /* Assets.xcassets */,
 				CAD0304E1F86E93000276DA9 /* LaunchScreen.storyboard */,
 				CAD030511F86E93000276DA9 /* Info.plist */,
@@ -251,6 +254,7 @@
 				CAD0304B1F86E93000276DA9 /* helpingHandV2.xcdatamodeld in Sources */,
 				CAD0305A1F86F0A000276DA9 /* ViewController.swift in Sources */,
 				CAD030431F86E93000276DA9 /* AppDelegate.swift in Sources */,
+				CA28C9561F9E86C800740DEF /* LoginorRegister.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
