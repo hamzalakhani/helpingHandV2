@@ -10,16 +10,42 @@ import UIKit
 
 class LoginorRegister: UITableViewController {
 
+    @IBAction func logoutButton(_ sender: Any) {
+        let mainScreen = MainScreen()
+        present(mainScreen, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
     }
-
+    
+    //Functions for login screen
+    
+    func handleLogout() {
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //Given methods
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
