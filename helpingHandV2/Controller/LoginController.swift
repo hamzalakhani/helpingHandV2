@@ -4,7 +4,6 @@
 //
 //  Created by Hamza Lakhani on 2017-10-24.
 //  Copyright © 2017 Hamza Lakhani. All rights reserved.
-//
 
 import UIKit
 
@@ -38,19 +37,74 @@ class LoginController: UIViewController {
         return tf
     }()
     
+    
+    let nameSeparatorView: UIView = {
+       let view = UIView()
+        view.backgroundColor = UIColor(displayP3Red: 220/255, green: 220/255, blue: 220/255, alpha: 1)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let emailTextField: UITextField = {
+        let tf = UITextField()
+        tf.placeholder = "Email"
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        return tf
+    }()
+    
+    
+    let emailSeparatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(displayP3Red: 220/255, green: 220/255, blue: 220/255, alpha: 1)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let passwordTextField: UITextField = {
+        let tf = UITextField()
+        tf.placeholder = "Password"
+        tf.translatesAutoresizingMaskIntoConstraints = false
+        tf.isSecureTextEntry = true
+        return tf
+    }()
+    
+    
+    let passwordSeparatorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(displayP3Red: 220/255, green: 220/255, blue: 220/255, alpha: 1)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    let profileImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "cooking")
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         view.backgroundColor = UIColor(displayP3Red: 0/255, green: 191/255, blue: 255/255, alpha: 1)
         
         
         view.addSubview(inputsContainerview)
         view.addSubview(loginRegistorButton)
+        view.addSubview(profileImageView)
         
         setupnputContainersView()
         setupLoginRegisterButton()
+        setupProfileImageView()
     }
     
-
+    func setupProfileImageView(){
+        //need x, y width and height constraints
+        profileImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        profileImageView.bottomAnchor.constraint(equalTo: inputsContainerview.topAnchor, constant: -12).isActive = true
+        profileImageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        profileImageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+    }
+    
     func setupnputContainersView() {
         //need x, y width and height constraints
 
@@ -62,6 +116,13 @@ class LoginController: UIViewController {
         
         //adding Text fields
         inputsContainerview.addSubview(nameTextField)
+        inputsContainerview.addSubview(nameSeparatorView)
+        inputsContainerview.addSubview(emailTextField)
+        inputsContainerview.addSubview(emailSeparatorView)
+        inputsContainerview.addSubview(passwordTextField)
+        inputsContainerview.addSubview(passwordSeparatorView)
+        
+        //NAME
         //need x, y width and height constraints
         nameTextField.leftAnchor.constraint(equalTo: inputsContainerview.leftAnchor, constant: 12).isActive = true
         nameTextField.topAnchor.constraint(equalTo: inputsContainerview.topAnchor).isActive = true
@@ -69,6 +130,37 @@ class LoginController: UIViewController {
         nameTextField.widthAnchor.constraint(equalTo: inputsContainerview.widthAnchor).isActive = true
         nameTextField.heightAnchor.constraint(equalTo: inputsContainerview.heightAnchor, multiplier: 1/3).isActive = true
 
+        //need x, y width and height constraints for fields(name)
+        nameSeparatorView.leftAnchor.constraint(equalTo: inputsContainerview.leftAnchor).isActive = true
+        nameSeparatorView.topAnchor.constraint(equalTo: nameTextField.bottomAnchor  ).isActive = true
+        
+        nameSeparatorView.widthAnchor.constraint(equalTo: inputsContainerview.widthAnchor).isActive = true
+        nameSeparatorView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        
+        //EMAIL
+        //need x, y width and height constraints
+        emailTextField.leftAnchor.constraint(equalTo: inputsContainerview.leftAnchor, constant: 12).isActive = true
+        emailTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor).isActive = true
+        
+        emailTextField.widthAnchor.constraint(equalTo: inputsContainerview.widthAnchor).isActive = true
+        emailTextField.heightAnchor.constraint(equalTo: inputsContainerview.heightAnchor, multiplier: 1/3).isActive = true
+        
+        //need x, y width and height constraints for fields(name)
+        emailSeparatorView.leftAnchor.constraint(equalTo: inputsContainerview.leftAnchor).isActive = true
+        emailSeparatorView.topAnchor.constraint(equalTo: emailTextField.bottomAnchor  ).isActive = true
+        
+        emailSeparatorView.widthAnchor.constraint(equalTo: inputsContainerview.widthAnchor).isActive = true
+        emailSeparatorView.heightAnchor.constraint(equalToConstant: 1).isActive = true
+        
+        //PASSWORD
+        //need x, y width and height constraints
+        passwordTextField.leftAnchor.constraint(equalTo: inputsContainerview.leftAnchor, constant: 12).isActive = true
+        passwordTextField.topAnchor.constraint(equalTo: emailTextField.bottomAnchor).isActive = true
+        
+        passwordTextField.widthAnchor.constraint(equalTo: inputsContainerview.widthAnchor).isActive = true
+        passwordTextField.heightAnchor.constraint(equalTo: inputsContainerview.heightAnchor, multiplier: 1/3).isActive = true
+        
+        
         
     }
     
