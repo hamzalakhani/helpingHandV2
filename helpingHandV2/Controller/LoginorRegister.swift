@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginorRegister: UITableViewController {
 
@@ -21,11 +22,6 @@ class LoginorRegister: UITableViewController {
         
     }
     
-    //Functions for login screen
-    
-    func handleLogout() {
-    
-    }
     
     
     

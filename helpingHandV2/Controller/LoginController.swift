@@ -6,6 +6,8 @@
 //  Copyright © 2017 Hamza Lakhani. All rights reserved.
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class LoginController: UIViewController {
     
@@ -27,8 +29,39 @@ class LoginController: UIViewController {
         button.setTitleColor(UIColor.white, for: .normal)
         button.layer.cornerRadius = 5
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        //programatically added touch up inside on button
+        button.addTarget(self, action: #selector(handleRegister), for: .touchUpInside)
         return button
     }()
+    
+    
+    //getting user into databse
+    @objc func handleRegister()  {
+        
+        guard let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text else {
+            print("Form not complete")
+            return
+        }
+        //getting user into database
+        Auth.auth().createUser(withEmail: email, password: password) { (user: User?, error) in
+            if error != nil{
+                print(error as Any)
+                return
+            } 
+        }
+        
+        //successufully authenticated user
+        let ref = Database.database().reference(fromURL: "https://helpinghandv2.firebaseio.com/")
+        let values = ["name": name, "email": email]
+        ref.updateChildValues(values) { (err, ref) in
+            
+            if err != nil {
+                print (err as Any)
+                return
+            }
+            print("Saved user successfully into Firbase database")
+        }
+    }
     
     let nameTextField: UITextField = {
         let tf = UITextField()
@@ -80,6 +113,7 @@ class LoginController: UIViewController {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "cooking")
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     
